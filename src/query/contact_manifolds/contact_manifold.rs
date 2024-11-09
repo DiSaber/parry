@@ -194,6 +194,8 @@ impl<ManifoldData, ContactData: Default + Copy> ContactManifold<ManifoldData, Co
         angle_dot_threshold: Real,
         dist_sq_threshold: Real,
     ) -> bool {
+        return false; // Should disable caching https://discord.com/channels/507548572338880513/748627261384556715/1238939453939122227
+
         if self.points.is_empty() {
             return false;
         }
